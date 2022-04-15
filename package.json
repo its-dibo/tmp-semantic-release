@@ -10,7 +10,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.1",
+    "semantic-release": "^19.0.2",
+    "semantic-release-monorepo": "^7.0.5"
   },
   "repository": {
     "type": "git",
