@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "semantic-release --no-ci"
+    "release": "semantic-release --no-ci --debug"
   },
   "repository": {
     "type": "git",
