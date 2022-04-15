@@ -10,7 +10,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "semantic-release --no-ci"
+    "release": "semantic-release --no-ci",
+    "delete tags": "git tag -l | xargs -n 1 git push --delete origin && git tag | xargs git tag -d"
   },
   "dependencies": {
     "@semantic-release/exec": "^6.0.3",
