@@ -1,0 +1,19 @@
+{
+  "name": "tmp-semantic-release-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eng-dibo/tmp-semantic-release.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eng-dibo/tmp-semantic-release/issues"
+  },
+  "homepage": "https://github.com/eng-dibo/tmp-semantic-release#readme"
+}
