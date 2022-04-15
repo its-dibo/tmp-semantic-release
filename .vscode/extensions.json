@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "mikael.angular-beastcode",
+    "jakethashi.vscode-angular2-emmet",
+    "angular.ng-template",
+    "hardikpthv.angularmaterial",
+    "infinity1207.angular2-switcher",
+    "streetsidesoftware.code-spell-checker",
+    "anseki.vscode-color",
+    "hookyqr.jsdoctagcomplete",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "tuxtina.json2yaml",
+    "esbenp.prettier-vscode",
+    "aljazsim.tsce",
+    "cybai.yaml-key-viewer",
+    "ms-azuretools.vscode-docker",
+    "dskwrk.vscode-generate-getter-setter"
+  ]
+}

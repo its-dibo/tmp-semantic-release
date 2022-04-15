@@ -1,0 +1,30 @@
+{
+  "prettier.arrowParens": "avoid",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "off",
+  "editor.fastScrollSensitivity": 3,
+  "editor.mouseWheelZoom": true,
+  "editor.showFoldingControls": "always",
+  "editor.stablePeek": true,
+  "editor.fontSize": 16,
+  "diffEditor.codeLens": true,
+  "diffEditor.renderSideBySide": false,
+  "window.title": "${dirty}${rootName} ${activeEditorShort}",
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+  "git.allowForcePush": true,
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+  "angular.enable-strict-mode-prompt": false,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "editor.minimap.enabled": false,
+  "editor.dragAndDrop": true,
+  "cSpell.words": [
+    "adsense",
+    "appspot",
+    "formly",
+    "gcloud",
+    "postback",
+    "prerender"
+  ]
+}
