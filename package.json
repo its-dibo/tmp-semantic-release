@@ -10,7 +10,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "semantic-release"
+    "release": "semantic-release --no-ci"
   },
   "dependencies": {
     "@semantic-release/exec": "^6.0.3",
