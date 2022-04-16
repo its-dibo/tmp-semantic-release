@@ -12,7 +12,7 @@ module.exports = {
 
     // keep it after all other plugins to commit all changes made by other plugins
     // set assets to commit all changed files (todo: exclude .gitignore content)
-    ["@semantic-release/git", { assets: ["**/*.*"] }],
+    ["@semantic-release/git", { assets: [] }],
   ],
   // extends: ["semantic-release-monorepo"],
 };
