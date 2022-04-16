@@ -11,9 +11,9 @@
   "main": "index.js",
   "scripts": {
     "release": "semantic-release --no-ci --debug",
-    "delete-tags": "npm run delete-tags:local && npm run delete-tags:remote",
+    "delete-tags": "git fetch && npm run delete-tags:local && npm run delete-tags:remote",
     "delete-tags:local": "git tag | xargs git tag -d",
-    "delete-tags:remote": "git ls-remote --tags | xargs git tag -d"
+    "delete-tags:remote": "git tag |  xargs git push --delete origin"
   },
   "dependencies": {
     "@semantic-release/exec": "^6.0.3",
@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/eng-dibo/tmp-semantic-release/issues"
   },
-  "homepage": "https://github.com/eng-dibo/tmp-semantic-release#readme"
+  "homepage": "https://github.com/eng-dibo/tmp-semantic-release#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1"
+  }
 }
