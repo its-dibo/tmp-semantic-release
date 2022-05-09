@@ -11,9 +11,9 @@
   "main": "index.js",
   "scripts": {
     "release": "semantic-release --no-ci --debug",
-    "delete-tags": "git fetch && npm run delete-tags:remote && npm run delete-tags:local",
-    "delete-tags:local": "git tag | xargs git tag -d",
-    "delete-tags:remote": "git tag |  xargs git push --delete origin"
+    "delete-tags": " npm run delete-tags:remote && npm run delete-tags:local",
+    "delete-tags:local": "git tag -d $(git tag -l)",
+    "delete-tags:remote": "git fetch && git push origin --delete $(git tag -l)"
   },
   "dependencies": {
     "@semantic-release/exec": "^6.0.3",
