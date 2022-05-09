@@ -12,7 +12,7 @@
   "scripts": {
     "release": "semantic-release --no-ci --debug",
     "release:mono": "semantic-release --no-ci -e semantic-release-monorepo",
-    "delete-tags": "npm run delete:tags:local && npm run delete:tags:remote",
+    "delete-tags": "npm run delete-tags:local && npm run delete-tags:remote",
     "delete-tags:local": "git tag | xargs git tag -d",
     "delete-tags:remote": "git ls-remote --tags | xargs git tag -d"
   },
