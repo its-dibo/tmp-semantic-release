@@ -13,8 +13,8 @@
     "release": "semantic-release --no-ci --debug",
     "release:mono": "semantic-release --no-ci -e semantic-release-monorepo",
     "delete-tags": "npm run delete-tags:local && npm run delete-tags:remote",
-    "delete-tags:local": "git tag | xargs git tag -d",
-    "delete-tags:remote": "git ls-remote --tags | xargs git tag -d"
+    "delete-tags:local": "git tag -d $(git tag -l)",
+    "delete-tags:remote": "git fetch && git push origin --delete $(git tag -l) && npm run delete-tags:local"
   },
   "dependencies": {
     "@semantic-release/exec": "^6.0.3",
