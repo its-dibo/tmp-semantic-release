@@ -7,6 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepublishOnly": "webpack && cp package.json dist/package.json",
     "release": "semantic-release --no-ci --debug"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/eng-dibo/tmp-semantic-release/issues"
   },
-  "homepage": "https://github.com/eng-dibo/tmp-semantic-release#readme"
+  "homepage": "https://github.com/eng-dibo/tmp-semantic-release#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
 }

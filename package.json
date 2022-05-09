@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/eng-dibo/tmp-semantic-release/issues"
   },
-  "homepage": "https://github.com/eng-dibo/tmp-semantic-release#readme"
+  "homepage": "https://github.com/eng-dibo/tmp-semantic-release#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0"
+  }
 }
