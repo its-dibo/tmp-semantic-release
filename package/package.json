@@ -7,7 +7,10 @@
   "description": "",
   "main": "out.js",
   "scripts": {
-    "prepublishOnly": "webpack && cp package.json dist/package.json",
+    "preversion": "echo 'preversion-----------------'",
+    "postversion": "echo 'postversion-----------------'",
+    "prepublishOnly": "webpack && cp package.json dist",
+    "prerelease": "echo 'prerelease-----------------' && mkdir -p dist && cp package.json dist",
     "release": "eval $(gp env -e) && semantic-release --no-ci --debug"
   },
   "repository": {
