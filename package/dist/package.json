@@ -1,0 +1,29 @@
+{
+  "name": "tmp-semantic-release-package",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "description": "",
+  "main": "out.js",
+  "scripts": {
+    "preversion": "echo 'preversion-----------------'",
+    "postversion": "echo 'postversion-----------------'",
+    "prepublishOnly": "webpack && cp package.json dist",
+    "prerelease": "echo 'prerelease-----------------' && mkdir -p dist && cp package.json dist",
+    "release": "eval $(gp env -e) && semantic-release --no-ci --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eng-dibo/tmp-semantic-release.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eng-dibo/tmp-semantic-release/issues"
+  },
+  "homepage": "https://github.com/eng-dibo/tmp-semantic-release#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
