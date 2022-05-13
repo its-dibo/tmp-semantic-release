@@ -9,7 +9,7 @@
   "scripts": {
     "preversion": "echo 'preversion-----------------'",
     "postversion": "echo 'postversion-----------------'",
-    "prepublishOnly": "webpack && cp package.json dist",
+    "prepublishOnly": "webpack",
     "prerelease": "echo 'prerelease-----------------' && mkdir -p dist && cp package.json dist",
     "release": "eval $(gp env -e) && semantic-release --no-ci --debug"
   },
